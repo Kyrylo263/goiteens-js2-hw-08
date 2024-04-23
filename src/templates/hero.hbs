@@ -1,0 +1,27 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Hero name</th>
+            <th>Weapon</th>
+            <th>Skills</th>
+        </tr>
+    </thead>
+    {{#each this}}
+    <tbody>
+        <tr>
+            <td><img src="{{img}}" alt="{{hero}}" width="110" height="120"></td>
+            <td>{{hero}}</td>
+            <td>{{weapon}}</td>
+            <td>{{skills}}</td>
+            {{!-- <td>
+                <ul>
+                    {{#each skills}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </td> --}}
+        </tr>
+    </tbody>
+    {{/each}}
+</table>
